@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.example.seekhoassignment"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.seekhoassignment"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -58,4 +58,5 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     kapt("com.google.dagger:hilt-android-compiler:2.51.1")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation (libs.androidx.lifecycle.runtime.ktx)
 }
